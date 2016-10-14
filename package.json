@@ -2,7 +2,7 @@
   "name": "bigintegerjs",
   "version": "0.1.0",
   "description": "Big integer library with a clean API and high-performance implementation and encoding",
-  "main": "src/integer.js",
+  "main": "build/integer.js",
   "scripts": {
     "test": "tsc && ./node_modules/mocha/bin/mocha --reporter spec"
   },

@@ -1,7 +1,9 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "module": "commonjs"
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "build"
   },
   "exclude": [
     "node_modules/*"
