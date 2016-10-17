@@ -2,10 +2,15 @@
   "name": "bigintegerjs",
   "version": "0.1.0",
   "description": "Big integer library with a clean API and high-performance implementation and encoding",
-  "main": "build/integer.js",
+  "main": "./build/integer",
+  "typings": "./build/integer",
   "scripts": {
-    "test": "tsc && ./node_modules/mocha/bin/mocha --reporter spec"
+    "test": "tsc && ./node_modules/mocha/bin/mocha --require source-map-support/register -R spec"
   },
+  "files": [
+    "build/",
+    "src/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jbrekelmans/bigintegerjs.git"
@@ -18,6 +23,7 @@
     "small"
   ],
   "author": "Jasper Brekelmans <jasperbrekelmans@gmail.com> (jasperbrekelmans.com)",
+  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
@@ -30,6 +36,11 @@
   "homepage": "https://github.com/jbrekelmans/bigintegerjs#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "source-map-support": "^0.4.4"
+  },
+  "dependencies": {
+    "esbasejs": "^0.1.9",
+    "ieee754js": "^0.1.2"
   }
 }
